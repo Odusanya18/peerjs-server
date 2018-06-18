@@ -121,8 +121,7 @@
                 BLOCK_SIZE: 12e5,
                 SOCKET_RECONNECTION_INTERVAL: 3e4,
                 WS_ENABLED: !0,
-                //wss://peerhls.herokuapp.com
-                WS_URL: "ws://localhost:9000/peerjs",
+                WS_URL: "wss://peerhls.herokuapp.com/peerjs",
                 WS_COMPRESS_SDP: !0,
                 WS_IDLE_TIMEOUT: 3e5,
                 DONT_SEND_SDP: !1,
