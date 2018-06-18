@@ -11,7 +11,7 @@ PeerServer helps broker connections between PeerJS clients. Data is not proxied 
 
 or
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy/?template=https://github.com/peers/peerjs-server)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy/?template=https://github.com/odusanya18/peerjs-server)
 
 ### Run PeerServer
 

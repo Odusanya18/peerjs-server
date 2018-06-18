@@ -1,0 +1,95 @@
+{
+	"tag": 63,
+	"body": {
+		"action": "session.end",
+		"randomBool": false,
+		"vendor": "videojs5",
+		"provider": "html5",
+		"tracking": "videoTag",
+		"mediaType": "vod",
+		"mediaProtocol": "hls",
+		"playlistUrl": "http://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+		"trackedLevelsManifest": true,
+		"playDuration": 79572,
+		"rebufferDuration": 0,
+		"lastPlayerEvent": "load.end",
+		"sinceLastPlayerEvent": 79573,
+		"numOfSeeks": 0,
+		"numOfErrors": 0,
+		"p2pDown": 0,
+		"p2pUp": 0,
+		"httpDown": 5695272,
+		"httpWaste": 0,
+		"p2pWaste": 0,
+		"preloadDown": 0,
+		"avgBitrate": 176000,
+		"loadTime": 5479,
+		"currentBuffer": 4.909000000000006,
+		"maxBufferHealth": 10821,
+		"requestAborts": 5,
+		"requestsWithoutLengthCount": 100,
+		"segmentDuration": 100328,
+		"segmentSize": 59326,
+		"playlistLength": 396,
+		"renditionCount": 5,
+		"errors": {
+			"hlsjs": {
+				"OTHER_INTERNAL_EXCEPTION": 1,
+				"ABR_SWITCH": 6,
+				"EMERGENCY_SWITCH": 3
+			},
+			"PEER5_STUCK_REQUESTS": 0
+		},
+		"p5Request2BeforeLast": {
+			"startBuffer": 10193,
+			"endBuffer": 4922,
+			"endEvent": "load:200",
+			"duration": 5269
+		},
+		"p5Request1BeforeLast": {
+			"startBuffer": 9370,
+			"endBuffer": 4921,
+			"endEvent": "load:200",
+			"duration": 4446
+		},
+		"p5Request0BeforeLast": {
+			"startBuffer": 4915,
+			"endBuffer": 4909,
+			"endEvent": "session.end",
+			"duration": 4
+		},
+		"durationSinceLastActiveRequest": 1,
+		"instance": 1,
+		"serverSpeed": {
+			"cdn": "Akamai",
+			"actual": {
+				"first": 676800,
+				"last": 3713000,
+				"count": 96,
+				"avg": 3682733.1875,
+				"min": 2926,
+				"max": 45308000,
+				"sum": 353542386
+			},
+			"predicted": {
+				"first": 4624800,
+				"last": 3182571,
+				"count": 94,
+				"avg": 2825054.425531915,
+				"min": 2926,
+				"max": 16951333,
+				"sum": 265555116
+			},
+			"latency": {
+				"first": 15,
+				"last": 12,
+				"count": 96,
+				"avg": 144.83333333333334,
+				"min": 4,
+				"max": 1033,
+				"sum": 13904
+			}
+		},
+		"scriptLoadTime": 145.49999999871943
+	}
+}

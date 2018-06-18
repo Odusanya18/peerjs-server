@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PeerLive a P2P/CDN </title>
+	<!-- peer5 client library -->
+	<!--<script src="//api.peer5.com/peer5.js?id=49gzrvn9mxgd5wzbasrd"></script>-->
+
+	<script src="./peer5.js"></script>
+	<script src="./peer5.videojs5.plugin.js"></script>
+	
+	<!-- Video.js5 scripts & styles -->
+	<link href="//vjs.zencdn.net/5.19.0/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/5.19.0/video.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+</head>
+<body>
+
+	<video id="player" class="video-js vjs-default-skin" height="360" width="640" controls preload="none">
+	    <source src="//bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8" type="application/x-mpegURL" />
+	</video>
+	<script>
+	    var player = videojs('#player');
+	</script>
+</body>
+</html>
