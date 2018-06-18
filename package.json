@@ -29,6 +29,6 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "lib/index.js"
+    "start": "lib/index.js --port ${PORT:=9000}"
   }
 }
