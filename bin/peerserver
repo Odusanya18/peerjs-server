@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const opts = require('optimist')
+const { hserver } = require('../')
+
+opts.usage('Usage: $0')
+  .options({
+    port: {
+      demand: true,
+      alias: 'p',
+      description: 'port'
+    }
+  }).argv
+
+process.on('uncaughtException', (error) => {
+  console.error('Error: ' + error)
+})
+
+let port =  opts.argv.port || 80
+
+hserver.listen(port)
+
+let host = hserver.address().address
+port = hserver.address().port
+
+console.log('Started PeerServer on %s, port: %s, path: /', host, port)
