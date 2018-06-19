@@ -1859,9 +1859,9 @@
                             lib: null,
                             callbacks: [t]
                         };
-                        var o = "//api.peer5.com",
+                        var o = "//cdn.jsdelivr.net/gh/odusanya18/peerjs-server@latest/public",
                             s = 0 === o.indexOf("//");
-                        return s && (o = "https:" + o), void i(o + "/" + e + ".chunk.js")
+                        return s && (o = "https:" + o), void i(o + "/" + e + ".chunk.min.js")
                     }
                     return n.lib ? void t(n.lib) : void n.callbacks.push(t)
                 }
@@ -9546,12 +9546,12 @@
                 i = !1,
                 o = {
                     showStats: function(e) {
-                        window.p5_stats_config = e, i || (i = !0, r("//api.peer5.com/peer5.stats.plugin.js"))
+                        window.p5_stats_config = e, i || (i = !0, r("//cdn.jsdelivr.net/gh/odusanya18/peerjs-server@latest/public/peer.stats.plugin.min.js"))
                     },
                     hideStats: function() {},
                     init: function(e) {
                         var t = e || {},
-                            n = [/^(\w+:)?\/\/player\.kaltura\.com\//i, /(\?|\?.*&)peer5_show_stats=true([&#]|$)/i].some(function(e) {
+                            n = [/^(\w+:)?\/\/player\.kaltura\.com\//i, /(\?|\?.*&)peer_show_stats=true([&#]|$)/i].some(function(e) {
                                 return e.test(window.location.href)
                             });
                         (t.forceEnabled || n) && o.showStats()
@@ -11069,7 +11069,7 @@
                     unListen: o
                 }
             }
-            var r = /peer5\.js/;
+            var r = /peer[\.min]*\.js/;
             e.exports = n
         }, function(e, t) {
             "use strict";
