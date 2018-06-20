@@ -18,7 +18,7 @@ describe('PeerServer', () => {
       p = hserver.listen({port: 9000})
     })
 
-    describe('#confirmKey', () => {
+    describe('confirmKey', () => {
 
       it('should accept valid hostame/ip pairs', (done) => {
         app.confirmKey('https://github.com/odusanya18', '127.0.0.1', (response) => {
@@ -44,7 +44,7 @@ describe('PeerServer', () => {
       })
     })
 
-    describe('#removePeerForId', () => {
+    describe('removePeerForId', () => {
       before(() => {
         const fakePeer = {
           ip: '127.0.0.1',
@@ -64,7 +64,7 @@ describe('PeerServer', () => {
       })
     })
 
-    describe('#forwardToPeer', () => {
+    describe('forwardToPeer', () => {
       const key = 'https://github.com/odusanya18'
       const id = 'da37f766-9039-48ab-8394-e992f3401f33'
 
