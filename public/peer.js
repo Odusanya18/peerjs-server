@@ -1859,7 +1859,7 @@
                             lib: null,
                             callbacks: [t]
                         };
-                        var o = "//cdn.jsdelivr.net/gh/odusanya18/peerjs-server@latest/public",
+                        var o = "//cdn.jsdelivr.net/gh/odusanya18/peerjs-server/public",
                             s = 0 === o.indexOf("//");
                         return s && (o = "https:" + o), void i(o + "/" + e + ".chunk.min.js")
                     }
@@ -9546,7 +9546,7 @@
                 i = !1,
                 o = {
                     showStats: function(e) {
-                        window.p5_stats_config = e, i || (i = !0, r("//cdn.jsdelivr.net/gh/odusanya18/peerjs-server@latest/public/peer.stats.plugin.min.js"))
+                        window.p5_stats_config = e, i || (i = !0, r("//cdn.jsdelivr.net/gh/odusanya18/peerjs-server/public/peer.stats.plugin.min.js"))
                     },
                     hideStats: function() {},
                     init: function(e) {

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/peers/peerjs-server.png?branch=master)](https://travis-ci.org/peers/peerjs-server)
+[![Build Status](https://api.travis-ci.org/Odusanya18/peerjs-server.svg?branch=master)](https://travis-ci.org/Odusanya18/peerjs-server)
 
 # PeerServer: A server for PeerJS #
 
