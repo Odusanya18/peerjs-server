@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>PeerLive a PDN </title>
-	<link href="//cdn.jsdelivr.net/npm/video.js@7/dist/video-js.min.css" rel="stylesheet">
+	<link href="//cdn.jsdelivr.net/combine/npm/video.js@7/dist/video-js.min.css,npm/videojs-settings-menu/dist/videojs-settings-menu.min.css,npm/videojs-hls-quality-selector@0/dist/videojs-hls-quality-selector.min.css,npm/videojs-brand@0/dist/videojs-brand.min.css" rel="stylesheet">
 	<style>
 		.video-js .vjs-menu-button-inline .vjs-slider-active,
 		.video-js .vjs-menu-button-inline:focus,
@@ -121,9 +121,40 @@
 	<video id="player" class="video-js vjs-default-skin" controls preload="none">
 	    <source src="//bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8" type="application/x-mpegURL" />
 	</video>
-	<script src="//cdn.jsdelivr.net/combine/gh/odusanya18/peerjs-server/public/peer.min.js,gh/odusanya18/peerjs-server/public/peer.videojs6.plugin.min.js,npm/video.js@7/dist/video.min.js,npm/@videojs/http-streaming@1/dist/videojs-http-streaming.min.js"></script>
+	<script src="//cdn.jsdelivr.net/combine/gh/odusanya18/peerjs-server/public/peer.min.js,gh/odusanya18/peerjs-server/public/peer.videojs6.plugin.min.js,npm/video.js@7/dist/video.min.js,npm/@videojs/http-streaming@1/dist/videojs-http-streaming.min.js,npm/videojs-contrib-quality-levels@2/dist/videojs-contrib-quality-levels.min.js,npm/videojs-hls-quality-selector@0/dist/videojs-hls-quality-selector.min.js,npm/videojs-settings-menu/dist/videojs-settings-menu.min.js,npm/videojs-brand@0/dist/videojs-brand.min.js"></script>
 	<script>
-	    var player = videojs('#player');
+		let options = {
+			playbackRates: [0.5, 1, 1.5, 2],
+			controlBar: {
+				children: {
+					playToggle: {},
+					muteToggle: {},
+					volumeControl: {},
+					currentTimeDisplay: {},
+					timeDivider: {},
+					durationDisplay: {},
+					liveDisplay: {},
+					flexibleWidthSpacer: {},
+					progressControl: {},
+					settingsMenuButton: {
+						entries: [
+							'subtitlesButton',
+							'playbackRateMenuButton'
+						]
+					},
+					fullscreenToggle: {}
+				}
+			}
+		};
+		let brandOptions = {
+			image: 'https://static.runkitcdn.com/assets/images/npm-logo.svg',
+			title: 'Demo Player PDN',
+			destination: 'https://github.com/odusanya18/peerjs-server/',
+			destinationTarget: '_top'
+		};
+	    let player = videojs('#player', options);
+		player.hlsQualitySelector();
+		player.brand(brandOptions);
 	</script>
 </body>
 </html>
